@@ -62,4 +62,92 @@
 
 // 3. WAP to print all prime numbere between two given numbers.
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Print_Prime number</title>
+</head>
+
+<body>
+	<script>
+		n1 = prompt("Enter the start number : ");
+		n2 = prompt("Enter the Last number : ");
+
+		for (i = n1; i < n2; i++) {
+			prime = true;
+			for (j = 2; j < i; j++) {
+				if (i % j == 0) {
+					prime = false;
+					break;
+				}
+			}
+			if (prime) {
+				document.write(i + "<br/>");
+			}
+		}
+	</script>
+</body>
+
+</html>
+
+// 	4. WAP to print factorial of the given number.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Factorial of the given number..</title>
+</head>
+
+<body>
+	<script>
+		n = prompt("Enter the number : ");
+		total = 1;
+		for (i = n; i > 0; i--) {
+			total *= i;
+		}
+		document.write(`The Factorail of the ${n} is ${total}. `);
+	</script>
+</body>
+
+</html>
+
+<!-- 5. WAP to Check Armstrong Number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Check Armstrong number</title>
+</head>
+
+<body>
+	<script>
+		sum = 0;
+		n = prompt("Enter the number for check Armstrong : ");
+		let temp = n;
+		while (temp > 0) {
+			let reminder = temp % 10;
+			// sum += reminder * reminder * reminder;
+			sum += reminder ** 3;
+			temp = parseInt(temp / 10);
+		}
+		if (sum == n) {
+			document.write(`The given number ${n} is Armstrong Number.`);
+		} else {
+			document.write(`The given number ${n} is Not Armstrong Number.`);
+		}
+	</script>
+</body>
+
+</html>

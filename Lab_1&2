@@ -151,3 +151,38 @@
 </body>
 
 </html>
+
+
+
+
+
+
+6. WAP to print Greatest common divisor.
+
+7. WAP to check whether the given number (int) is palindrom or not.
+
+8. WAP to concate two strings in JavaScript
+
+9. WAP to demonstrate the use of various inbuilt string functions.
+
+10.Write a JavaScript to take 2 digit number and then separate these 2 digits,
+then multiply first digit by itself for second digit times. (for example, 23
+should be separated as 2 and 3. 2 should multiply with itself 3 times). 11.Write a JavaScript, that uses a loop, that searches a word in sentence held
+in an array, returning the index of the word.
+
+12.Write an HTML file with Javascript that finds position of first occurrence of
+vowel “a”, last occurrence of vowel “a” in a given word and returns the string between them. For example, ajanta- then script would return first occurrence of “a”-that is position 1 and last occurrence-6 and string between them is “jant”.
+
+13.WAP to create an array of countries, read values of an array from the user and print it.
+
+14.WAP to read an array from the user and sort them in ascending order.
+
+15.Demonstrate User Defined Functions Using Java Script to find whether the
+given number is prime or not. Demonstrate the use of array to find
+maximum number.
+
+16.WAP to demonstrate the use of various inbuilt functions on an array, like
+push, pop, sort, etc.
+
+17.WAP to create simple calculator using prompt and document.write
+method.

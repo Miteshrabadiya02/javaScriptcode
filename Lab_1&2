@@ -23,3 +23,43 @@
 </body>
 
 </html>
+
+// 2. WAP to cheeck whether the given number is prime or not.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Check prime or not</title>
+</head>
+
+<body>
+	<script>
+		n = prompt("Enter the number : ");
+		prime = true;
+		if (n == 1 || n == 0) {
+			document.write("Enter valid number.");
+		}
+		for (i = 2; i < n; i++) {
+			if (n % i == 0) {
+				prime = false;
+				break;
+			}
+		}
+		if (prime) {
+			document.write(`The given number ${n} is Prime.`);
+		} else {
+			document.write(`The given number ${n} is Not Prime.`);
+		}
+	</script>
+</body>
+
+</html>
+
+
+// 3. WAP to print all prime numbere between two given numbers.
+
+

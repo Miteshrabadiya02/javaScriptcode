@@ -152,23 +152,149 @@
 
 </html>
 
+<!-- 6. WAP to print Greatest common Divisor.  -->
 
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gratest Common Divisor.</title>
+</head>
 
+<body>
+	<script>
+		// take input number 1 & 2.
+		n1 = prompt("Enter the number : ");
+		n2 = prompt("Enter the number : ");
+		// gcd of two number.
+		let gcd;
+		//looping for 1 to number 1 to 2.
+		for (let i = 1; i <= n1 && i <= n2; i++) {
+			// check factor of both integer.
+			if (n1 % i == 0 && n2 % i == 0) {
+				gcd = i;
+			}
+		}
+		//print the GCD number
+		document.write(`The GCD of two numbers ${n1} and ${n2} is ${gcd} .`);
 
+	</script>
+</body>
 
-6. WAP to print Greatest common divisor.
+</html>
 
-7. WAP to check whether the given number (int) is palindrom or not.
+<!-- 7.WAP to print the given number is Palindrom or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Check the Palindrom number.</title>
+</head>
+
+<body>
+	<script>
+		// take input of String.
+		let str = prompt("Enter the string.");
+		palindrom = true;
+		// find the length of string.
+		const len = str.length;
+
+		// loop of half string
+		for (let i = 0; i < len / 2; i++) {
+			//check first and last element.
+			if (str[i] != str[len - 1 - i]) {
+				palindrom = false;
+			}
+		}
+		// print the result
+		if (palindrom) {
+			document.write(`The ${str} is Palindrom.`);
+		} else {
+			document.write(`The ${str} is Not Palindrom.`);
+		}
+	</script>
+</body>
+
+</html>
+
 
 8. WAP to concate two strings in JavaScript
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Concate two String.</title>
+</head>
+
+<body>
+	<script>
+		// input two String.
+		let str1 = prompt("Enter the string1.");
+		let str2 = prompt("Enter the string2.");
+		// concate the two string
+		document.write(str1 + " " + str2);
+	</script>
+</body>
+
+</html>
+
 9. WAP to demonstrate the use of various inbuilt string functions.
+
+
 
 10.Write a JavaScript to take 2 digit number and then separate these 2 digits,
 then multiply first digit by itself for second digit times. (for example, 23
-should be separated as 2 and 3. 2 should multiply with itself 3 times). 11.Write a JavaScript, that uses a loop, that searches a word in sentence held
+should be separated as 2 and 3. 2 should multiply with itself 3 times). 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multiplication by it self.</title>
+</head>
+
+<body>
+	<script>
+		let sum = 1;
+		//take input
+		let str = prompt("Enter two digit number.");
+		// find the length of string.
+		let len = str.length;
+		if (len > 2) {
+			document.write("Enter only Two digit number.");
+		} else {
+			//looping for multiplication.
+			for (let i = 0; i < str[1]; i++) {
+				// document.write(i +"<br/>");
+				sum *= str[0];
+			}
+			// print the value.
+			document.write(`The muliplication of first digit ${str[0]} with it self by secound digit ${str[1]} is : ${sum} .`);
+		}
+	</script>
+</body>
+
+</html>
+
+
+11.Write a JavaScript, that uses a loop, that searches a word in sentence held
 in an array, returning the index of the word.
+
 
 12.Write an HTML file with Javascript that finds position of first occurrence of
 vowel “a”, last occurrence of vowel “a” in a given word and returns the string between them. For example, ajanta- then script would return first occurrence of “a”-that is position 1 and last occurrence-6 and string between them is “jant”.
